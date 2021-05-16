@@ -1,4 +1,4 @@
-package corejava8labbookexercises;
+package com.capgemini.lab1;
 
 import java.util.Scanner;
 
