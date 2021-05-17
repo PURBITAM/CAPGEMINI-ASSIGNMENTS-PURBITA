@@ -1,20 +1,34 @@
 package com.capgemini.lab3;
 
-import java.util.Scanner;
-//======================================= X ======
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class lab3exercise5 
 {
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException 
 	{
 		// TODO Auto-generated method stub
-		System.out.print("Enter the number to be modefied : ");
-		Scanner sc=new Scanner(System.in);
-		String num=sc.nextLine();
-		String[] lines=num.split("\r\n|\r|\n");
-		String[] words=num.split("[ ,.]");
-		System.out.println("No of Lines : "+lines.length);
-		System.out.println("No of Words : "+words.length);
+		BufferedReader reader = new BufferedReader(new FileReader("D:\\sample.txt"));
+		String currentLine = reader.readLine();
+		int lineCount=0,word=0,ch=0;
+		String[] arrWord;
+		String[] arrChar;
+		while (currentLine != null)
+        {
+			lineCount++;
+			arrWord=currentLine.split("[ ,.]");
+			word=word+arrWord.length;
+			for(int i=0;i<arrWord.length;i++)
+			{
+				ch=ch+arrWord[i].length();
+			}
+			currentLine = reader.readLine();
+        }
+		System.out.println("Number of Characters : "+ch);
+		System.out.println("Number of lines : "+lineCount);
+		System.out.println("Number of words : "+word);
 	}
 
 }
