@@ -25,7 +25,7 @@ public class TransactionMain
 			}
 			else if(ch==2)
 			{
-				System.out.println("Enter Amount to be withrawn : ");
+				System.out.println("Enter Amount to be withdrawn : ");
 				double amt=sc.nextDouble();
 				Withdrawal w=new Withdrawal(amount,amt);
 				amount=w.execute();
