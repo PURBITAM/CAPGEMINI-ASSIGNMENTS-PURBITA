@@ -14,6 +14,6 @@ public class Transaction
 	
 	public double execute()
 	{
-		return (Double) null;
+		return 0;
 	}
 }

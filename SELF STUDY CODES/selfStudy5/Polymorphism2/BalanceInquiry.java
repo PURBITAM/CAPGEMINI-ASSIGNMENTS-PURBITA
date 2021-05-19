@@ -19,7 +19,6 @@ public class BalanceInquiry extends Transaction
 
 	public double execute()
 	{
-		//System.out.println("Balance is : "+balance);
 		return balance;
 	}
 }
