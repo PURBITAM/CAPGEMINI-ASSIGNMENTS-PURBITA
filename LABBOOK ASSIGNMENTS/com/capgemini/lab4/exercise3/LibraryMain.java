@@ -62,7 +62,7 @@ public class LibraryMain
 		System.out.println("Enter Run Time : ");
 		runtime =sc.nextInt();
 		Video v=new Video(UINumber,title,director,genre,year,numberOfCopies,runtime);
-		System.out.println("===JOURNAL PAPER DETAILS===");
+		System.out.println("===VIDEO DETAILS===");
 		v.printVideo();
 	}
 	public static void CDMethod()
@@ -82,7 +82,7 @@ public class LibraryMain
 		System.out.println("Enter Run Time : ");
 		runtime =sc.nextInt();
 		CD cd=new CD(UINumber,title,artist,genre,numberOfCopies,runtime);
-		System.out.println("===JOURNAL PAPER DETAILS===");
+		System.out.println("===CD DETAILS===");
 		cd.printCD();
 	}
 	public static void main(String[] args) 
