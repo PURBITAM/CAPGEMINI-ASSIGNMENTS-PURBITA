@@ -1,4 +1,4 @@
-package selfstudy8.com.capgemini.flowerhashset;
+package com.capgemini.selfstudy8.flowerhashset;
 
 import java.util.HashSet;
 import java.util.Iterator;

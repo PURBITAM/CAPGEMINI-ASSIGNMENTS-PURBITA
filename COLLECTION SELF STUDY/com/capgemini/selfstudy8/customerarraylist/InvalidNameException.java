@@ -1,4 +1,4 @@
-package selfstudy8.com.capgemini.customerarraylist;
+package com.capgemini.selfstudy8.customerarraylist;
 
 public class InvalidNameException extends Exception
 {

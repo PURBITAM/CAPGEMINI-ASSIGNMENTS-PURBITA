@@ -1,4 +1,4 @@
-package selfstudy8.com.capgemini.objectArray;
+package com.capgemini.selfstudy8.objectarray;
 
 import java.util.Scanner;
 

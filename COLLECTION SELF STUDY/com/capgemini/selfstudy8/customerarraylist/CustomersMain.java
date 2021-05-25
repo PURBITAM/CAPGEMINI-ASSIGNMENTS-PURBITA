@@ -1,4 +1,4 @@
-package selfstudy8.com.capgemini.customerarraylist;
+package com.capgemini.selfstudy8.customerarraylist;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package selfstudy8.com.capgemini.customerarraylist;
+package com.capgemini.selfstudy8.customerarraylist;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
