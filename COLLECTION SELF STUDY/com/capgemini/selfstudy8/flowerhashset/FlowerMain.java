@@ -3,7 +3,6 @@ package com.capgemini.selfstudy8.flowerhashset;
 import java.util.HashSet;
 import java.util.Scanner;
 
-import selfstudy8.Product;
 
 public class FlowerMain {
 

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-import selfstudy8.hashset.Flower;
 
 public class CustomersMain {
 
