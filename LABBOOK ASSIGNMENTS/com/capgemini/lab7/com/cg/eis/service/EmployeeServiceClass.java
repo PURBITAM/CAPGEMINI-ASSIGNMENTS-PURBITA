@@ -1,13 +1,12 @@
 package com.capgemini.lab7.com.cg.eis.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 import com.capgemini.lab7.com.cg.eis.bean.Employee;
 
-public class EmployeeServiceClass 
+public class EmployeeServiceClass implements EmployeeService
 {
 	String designation,insuranceScheme;
 	double salary;
@@ -31,7 +30,7 @@ public class EmployeeServiceClass
 			{
 				insuranceScheme="Scheme C";
 			}
-			else // if(salary<5000 && designation.equals("Clerk"))
+			else 	// if(salary<5000 && designation.equals("Clerk")) or any combination of salary and designation
 			{
 				insuranceScheme="No Scheme";
 			}
