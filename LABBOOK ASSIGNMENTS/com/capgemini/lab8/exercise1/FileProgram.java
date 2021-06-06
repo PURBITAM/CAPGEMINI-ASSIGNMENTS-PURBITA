@@ -1,10 +1,8 @@
 package com.capgemini.lab8.exercise1;
 
-import java.util.Iterator;
-
 public class FileProgram 
 {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args){
 		CopyDataThread t=new CopyDataThread();
 		t.start();
 	}

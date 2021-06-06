@@ -21,34 +21,36 @@ public class CopyDataThread extends Thread
 	}
 	public static void fileHandle() throws IOException
 	{
-		File file1 = new File("src\\com\\capgemini\\lab8\\source.txt");
-		File file2=new File("src\\com\\capgemini\\lab8\\target.txt");
-		BufferedReader br = new BufferedReader(new FileReader(file1));
-		BufferedWriter writer = new BufferedWriter(new FileWriter(file2));
-		
-	    String str="ABCD EFGH";
-	    //writer.write(str);
-	    
-		String st;
-		  while ((st = br.readLine()) != null)
-		  {
-			  for(int i=0;i<st.length();i++)
-				{
-					//System.out.println(i);
-				  	writer.write(st.charAt(i));
-					if((i+1)%10==0)
-					{
-						try {
-							writer.write("|\n");
-							System.out.println("10 characters are copied");
-							Thread.sleep(5000);
-						} catch (InterruptedException e) {
-							e.printStackTrace();
+		try
+		{
+			 File file1= new File("src\\com\\capgemini\\lab8\\source.txt");
+			 File file2=new File("src\\com\\capgemini\\lab8\\target.txt");
+			 BufferedReader br = new BufferedReader(new FileReader(file1));
+				BufferedWriter writer = new BufferedWriter(new FileWriter(file2));
+				
+				String st;
+				  while ((st = br.readLine()) != null)
+				  {
+					  for(int i=0;i<st.length();i++)
+						{
+						  	writer.write(st.charAt(i));
+							if((i+1)%10==0)
+							{
+								try {
+									System.out.println("10 characters are copied");
+									Thread.sleep(5000);
+								} catch (InterruptedException e) {
+									e.printStackTrace();
+								}
+							}
+							
 						}
-					}
-					
-				}
-		  }
-		  writer.close();
+				  }
+				  writer.close();
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("File not exist");
+		}
 	}
 }
