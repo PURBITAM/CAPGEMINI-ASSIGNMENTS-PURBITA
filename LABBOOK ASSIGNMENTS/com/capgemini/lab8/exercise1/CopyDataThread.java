@@ -50,7 +50,7 @@ public class CopyDataThread extends Thread
 		}
 		catch(FileNotFoundException e)
 		{
-			System.out.println("File not exist");
+			System.out.println("File not found");
 		}
 	}
 }
