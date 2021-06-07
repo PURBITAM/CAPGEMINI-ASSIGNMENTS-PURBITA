@@ -41,7 +41,7 @@ public class MethodReferenceMain
 	public static void main(String[] args) 
 	{
 		MethodReferenceMain mrm=new MethodReferenceMain();
-		MethodReferenceClass mr=mrm::printDetails;
+		MethodReference mr=mrm::printDetails;
 		mr.referenceMethod();
 	}
 }
