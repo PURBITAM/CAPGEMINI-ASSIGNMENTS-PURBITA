@@ -1,10 +1,9 @@
-package foodorderingsystempackage;
+package com.capgemini.foodorderingsystem;
 
 import java.util.Scanner;
 
-import customer.Customer;
-import customer.CustomerService;
-import vendor.VendorService;
+import com.capgemini.foodorderingsystem.service.CustomerService;
+import com.capgemini.foodorderingsystem.service.VendorService;
 
 public class FoodOrderingSystemMainClass 
 {

@@ -1,4 +1,4 @@
-package vendor;
+package com.capgemini.foodorderingsystem.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -128,11 +128,15 @@ public class Vendor {
 			pstmt=con.prepareStatement(getProduct);
 			pstmt.setInt(1, vId2);
 			rs=pstmt.executeQuery();
-			System.out.println("PID"+"\t"+"NAME"+"\t"+"PRICE");
+			//System.out.println("PID"+"\t"+"NAME"+"\t"+"PRICE");
 			System.out.println("=======================================");
 			while(rs.next())
 			{
-				System.out.println(rs.getInt(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+				//System.out.println(+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+				System.out.println("Customer ID : "+rs.getInt(1));
+				System.out.println("Customer Name : "+rs.getString(2));
+				System.out.println("Customer Phone Number : "+rs.getLong(4));
+				System.out.println("Customer Address : "+rs.getString(5));
 				
 			}
 			System.out.println("=======================================");

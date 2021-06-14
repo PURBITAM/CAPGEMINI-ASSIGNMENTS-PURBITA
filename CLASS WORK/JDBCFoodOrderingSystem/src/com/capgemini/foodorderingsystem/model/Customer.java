@@ -1,4 +1,4 @@
-package customer;
+package com.capgemini.foodorderingsystem.model;
 
 import java.sql.Statement;
 	import java.util.Scanner;
@@ -135,8 +135,11 @@ public class Customer
 				System.out.println("=======================================");
 				while(rs.next())
 				{
-					System.out.println(rs.getInt(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
-					
+					//System.out.println(rs.getInt(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
+					System.out.println("Customer ID : "+rs.getInt(1));
+					System.out.println("Customer Name : "+rs.getString(2));
+					System.out.println("Customer Phone Number : "+rs.getLong(4));
+					System.out.println("Customer Address : "+rs.getString(5));
 				}
 				System.out.println("=======================================");
 			}

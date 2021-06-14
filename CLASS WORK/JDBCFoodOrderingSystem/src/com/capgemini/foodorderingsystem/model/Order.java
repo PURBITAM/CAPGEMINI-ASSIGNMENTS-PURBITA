@@ -1,4 +1,4 @@
-package order;
+package com.capgemini.foodorderingsystem.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

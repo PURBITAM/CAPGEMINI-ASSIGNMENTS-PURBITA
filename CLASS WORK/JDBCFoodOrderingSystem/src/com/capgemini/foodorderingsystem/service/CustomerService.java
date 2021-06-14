@@ -1,11 +1,12 @@
-package vendor;
+package com.capgemini.foodorderingsystem.service;
 
 import java.util.Scanner;
 
+import com.capgemini.foodorderingsystem.model.Customer;
 
-public class VendorService 
+public class CustomerService 
 {
-	public static void profile(Vendor pms,int custId)
+	public static void profile(Customer pms,int custId)
 	{
 		int flag=0;
 		while(true)
@@ -17,11 +18,11 @@ public class VendorService
 			int transaction=sc.nextInt();
 			switch(transaction)
 			{
-				case 1:		pms.updateVendor(custId);
+				case 1:		pms.updateCustomer(custId);
 							break;
-				case 2:		pms.deleteVendor(custId);
+				case 2:		pms.deleteCustomer(custId);
 							break;
-				case 3:		pms.getVendor(custId);
+				case 3:		pms.getCustomer(custId);
 							break;
 				case 4: 	flag=1;
 							break;
@@ -33,14 +34,14 @@ public class VendorService
 		}
 	}
 	static Scanner sc=new Scanner(System.in);
-	public void VendorChoice() 
+	public void customerChoice() 
 	{
 		// TODO Auto-generated method stub
-		Vendor pms= new Vendor();
+		Customer pms= new Customer();
 		pms.dbConnection();
 		char cont='y';
 		int transaction;
-		int vId=0;
+		int custId=0;
 		String pwd;
 		System.out.println("Enter the choice : ");
 		System.out.println("1. Register");
@@ -50,23 +51,19 @@ public class VendorService
 		{
 		case 1:		while(true)
 					{
-						vId=pms.insertVendor();
-						{
-							if(vId!=0)
-							{
-								break;
-							}
-						}
+						custId=pms.insertCustomer();
+						break;
+
 					}
 					break;
 		case 2:		while(true)
 					{
 						System.out.println("Enter Customer ID : ");
-						vId=sc.nextInt();
+						custId=sc.nextInt();
 						System.out.println("Enter password : ");
 						sc.nextLine();
 						pwd=sc.nextLine();
-						if(pms.loginValidate(vId,pwd))
+						if(pms.loginValidate(custId,pwd))
 						{
 							break;
 						}
@@ -83,30 +80,30 @@ public class VendorService
 		{
 			System.out.println("Enter the choice : ");
 			System.out.println("1. Customer Profile");
-			System.out.println("2. Add Item");
+			System.out.println("2. Place Order");
 			System.out.println("3. Order history");
-			System.out.println("4. Log out");
+			System.out.println("4. Recharge Wallet Amount");
 			transaction=sc.nextInt();
 			switch(transaction)
 			{
-				case 1:		profile(pms,vId);
+				case 1:		profile(pms,custId);
 							break;
-				case 2:		//pms.placeVendor(custId);
+				case 2:		pms.placeOrder(custId);
 							break;
-				case 3:		pms.getVendor(vId);
+				case 3:		pms.getCustomer(custId);
 							break;
-				case 4: 	System.out.println("Customer ID : "+vId+" logged out.");
+				case 4: 	System.out.println("Customer ID : "+custId+" logged out.");
 							System.exit(0);
 							break;
 			}
 			
-			System.out.print("do you want to continue : ");
+			System.out.print("do you want to LOG OUT y/n : ");
 			cont=sc.next().trim().charAt(0);
-			if(cont=='y')
+			if(cont=='n')
 			{
 				continue;
 			}
-			else
+			else if(cont=='y')
 			{
 				break;
 			}
