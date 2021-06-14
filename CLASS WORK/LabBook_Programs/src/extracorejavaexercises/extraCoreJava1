@@ -1,0 +1,91 @@
+Questions
+1. Real-world objects contain _state__ and __behaviour_.
+2. A software object's state is stored in __field__.
+3. A software object's behavior is exposed through __methods__.
+4. Hiding internal data from the outside world, and accessing it only through publicly exposed methods is
+known as data __encapsulation__.
+5. A blueprint for a software object is called a __class__.
+6. Common behavior can be defined in a __superclass__ and inherited into a __subclass__ using the __extends__ keyword.
+7. A collection of methods with no implementation is called an __interface__.
+8. A namespace that organizes classes and interfaces by functionality is called a __package__.
+9. The term API stands for __Application Programming Interface__?
+
+
+
+====================================================================
+Operators
+Questions
+1. comparison operator
+3. 	a. i=11,n=0
+	b. i=11,n=1
+6. logical complement operator "!"
+7. ==
+8. if someCondition true -> value1 else value2
+
+Exercises
+
+1. 	class ArithmeticDemo 
+	{
+		public static void main (String[] args)
+		{
+			int result = 1 + 2;
+			System.out.println(result);
+			result -= 1;
+			System.out.println(result);
+			result *= 2;
+			System.out.println(result);
+			result /= 2;
+			System.out.println(result);
+			result += 8;
+			result %= 7;
+			System.out.println(result);
+		}
+	}
+
+24. i=5 -> ++i=5+1=6 -> i++=6->7 -> i=7 
+
+=================================================================
+Control Flow
+Questions
+1. The most basic control flow statement supported by the Java programming language is the __if-then___ statement.
+2. The __switch__ statement allows for any number of possible execution paths.
+3. The __do-while__ statement is similar to the while statement, but evaluates its expression at the __bottom__ of the
+loop.
+4. How do you write an infinite loop using the for statement? for(;;)
+5. How do you write an infinite loop using the while statement while(true)
+
+Exercises
+1 a. second string
+	 third string
+  b. 
+  c. 
+  d. 
+ ====================================================================
+ 
+  
+Expression
+Expressions, Statements, and Blocks
+Questions
+1. Operators may be used in building ___, which compute values.
+2. Expressions are the core components of ___.
+3. Statements may be grouped into ___.
+4. The following code snippet is an example of a ___ expression.
+5. 1 * 2 * 3
+6. Statements are roughly equivalent to sentences in natural languages, but instead of ending with a
+period, a statement ends with a ___.
+7. A block is a group of zero or more statements between balanced ___ and can be used anywhere a
+single statement is allowed.
+
+Exercises
+1. assignment expression
+2. increment exp
+3. 
+
+
+
+
+
+
+
+
+
